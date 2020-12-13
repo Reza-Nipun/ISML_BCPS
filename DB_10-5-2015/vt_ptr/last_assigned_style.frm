@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select max(`vt_ptr`.`tb_ie_target_assign`.`sl`) AS `max_sl`,`vt_ptr`.`tb_ie_target_assign`.`style` AS `style`,`vt_ptr`.`tb_ie_target_assign`.`line` AS `line` from `vt_ptr`.`tb_ie_target_assign` group by `vt_ptr`.`tb_ie_target_assign`.`style`,`vt_ptr`.`tb_ie_target_assign`.`line` order by `vt_ptr`.`tb_ie_target_assign`.`line`
+md5=eddbac7064dfebd7fa8e19064bb9a505
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2014-07-03 07:02:18
+create-version=1
+source=SELECT MAX(sl) as max_sl, style, line from tb_ie_target_assign GROUP BY style, line ORDER BY `tb_ie_target_assign`.`line` ASC
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select max(`vt_ptr`.`tb_ie_target_assign`.`sl`) AS `max_sl`,`vt_ptr`.`tb_ie_target_assign`.`style` AS `style`,`vt_ptr`.`tb_ie_target_assign`.`line` AS `line` from `vt_ptr`.`tb_ie_target_assign` group by `vt_ptr`.`tb_ie_target_assign`.`style`,`vt_ptr`.`tb_ie_target_assign`.`line` order by `vt_ptr`.`tb_ie_target_assign`.`line`

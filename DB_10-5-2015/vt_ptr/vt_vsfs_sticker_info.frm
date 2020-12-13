@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select `t0`.`sl` AS `sl`,`t0`.`CutID` AS `CutID`,`t0`.`SizeMain` AS `SizeMain`,`t0`.`Size` AS `Size`,`t0`.`Start` AS `Start`,`t0`.`End` AS `End`,((`t0`.`End` - `t0`.`Start`) + 1) AS `Qty` from `vt_ptr`.`tb_vsfs_sticker_info` `t0`
+md5=ed18dd75fbadc848bfc577bcb564beec
+updatable=1
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2015-03-29 04:39:11
+create-version=1
+source=SELECT T0.* ,(T0.End-T0.Start+1) AS Qty FROM tb_vsfs_sticker_info T0
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select `t0`.`sl` AS `sl`,`t0`.`CutID` AS `CutID`,`t0`.`SizeMain` AS `SizeMain`,`t0`.`Size` AS `Size`,`t0`.`Start` AS `Start`,`t0`.`End` AS `End`,((`t0`.`End` - `t0`.`Start`) + 1) AS `Qty` from `vt_ptr`.`tb_vsfs_sticker_info` `t0`

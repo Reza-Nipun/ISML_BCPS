@@ -1,0 +1,2 @@
+CREATE VIEW vt_vsfs_sticker_info AS SELECT T0.* ,(T0.End-T0.Start+1) AS Qty FROM tb_vsfs_sticker_info T0
+

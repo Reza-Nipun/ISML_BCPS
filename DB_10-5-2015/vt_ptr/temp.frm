@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select max(`vt_ptr`.`tb_ie_target_assign`.`sl`) AS `srl` from `vt_ptr`.`tb_ie_target_assign` group by `vt_ptr`.`tb_ie_target_assign`.`line`
+md5=98db80c8d8d78de0db446bb18bac2c57
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=2
+with_check_option=0
+timestamp=2014-06-17 08:35:41
+create-version=1
+source=SELECT MAX(sl) AS \'srl\' FROM tb_ie_target_assign GROUP BY line
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select max(`vt_ptr`.`tb_ie_target_assign`.`sl`) AS `srl` from `vt_ptr`.`tb_ie_target_assign` group by `vt_ptr`.`tb_ie_target_assign`.`line`

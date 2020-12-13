@@ -1,0 +1,15 @@
+TYPE=VIEW
+query=select sum(`vt_ptr`.`tb_hour_production`.`target`) AS `target`,sum(`vt_ptr`.`tb_hour_production`.`actual`) AS `actual`,`vt_ptr`.`tb_hour_production`.`buyer` AS `buyer`,`vt_ptr`.`tb_hour_production`.`floor` AS `floor`,`vt_ptr`.`tb_hour_production`.`unit` AS `unit`,`vt_ptr`.`tb_hour_production`.`date` AS `date` from `vt_ptr`.`tb_hour_production` where (`vt_ptr`.`tb_hour_production`.`target` <> 0) group by `vt_ptr`.`tb_hour_production`.`buyer`,`vt_ptr`.`tb_hour_production`.`floor`,`vt_ptr`.`tb_hour_production`.`unit`,`vt_ptr`.`tb_hour_production`.`date` order by `vt_ptr`.`tb_hour_production`.`date`
+md5=b7591664d6dd906a9809191804494717
+updatable=0
+algorithm=0
+definer_user=root
+definer_host=localhost
+suid=1
+with_check_option=0
+timestamp=2014-09-10 04:30:36
+create-version=1
+source=select sum(`tb_hour_production`.`target`) AS `target`,sum(`tb_hour_production`.`actual`) AS `actual`,`tb_hour_production`.`buyer` AS `buyer`,`tb_hour_production`.`floor` AS `floor`,`tb_hour_production`.`unit` AS `unit`,`tb_hour_production`.`date` AS `date` from `tb_hour_production` where (`tb_hour_production`.`target` <> 0) group by `tb_hour_production`.`buyer`,`tb_hour_production`.`floor`,`tb_hour_production`.`unit`,`tb_hour_production`.`date` order by `tb_hour_production`.`date`
+client_cs_name=utf8
+connection_cl_name=utf8_general_ci
+view_body_utf8=select sum(`vt_ptr`.`tb_hour_production`.`target`) AS `target`,sum(`vt_ptr`.`tb_hour_production`.`actual`) AS `actual`,`vt_ptr`.`tb_hour_production`.`buyer` AS `buyer`,`vt_ptr`.`tb_hour_production`.`floor` AS `floor`,`vt_ptr`.`tb_hour_production`.`unit` AS `unit`,`vt_ptr`.`tb_hour_production`.`date` AS `date` from `vt_ptr`.`tb_hour_production` where (`vt_ptr`.`tb_hour_production`.`target` <> 0) group by `vt_ptr`.`tb_hour_production`.`buyer`,`vt_ptr`.`tb_hour_production`.`floor`,`vt_ptr`.`tb_hour_production`.`unit`,`vt_ptr`.`tb_hour_production`.`date` order by `vt_ptr`.`tb_hour_production`.`date`
